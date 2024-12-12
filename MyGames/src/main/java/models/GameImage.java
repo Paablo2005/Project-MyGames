@@ -1,0 +1,25 @@
+package models;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "game_images")
+public class GameImage {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "image_id")
+    private Integer id;
+
+    @ManyToOne
+    @JoinColumn(name = "game_id", nullable = false)
+    private Game game;
+
+    @Column(name = "image_url", nullable = false)
+    private String url;
+
+    @Column(name = "caption")
+    private String caption;
+
+    // Getters and setters
+}

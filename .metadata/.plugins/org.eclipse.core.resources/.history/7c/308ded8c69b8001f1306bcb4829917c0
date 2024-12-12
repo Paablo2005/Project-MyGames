@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane style="-fx-background-image: url('file:/C:/Users/pablo/Desktop/MyGames/Project/MyGames/src/main/resources/Login.jpeg'); -fx-background-size: cover;">
+         <top>
+            <Pane prefHeight="30.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefWidth="235.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <Pane prefHeight="30.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <Pane prefWidth="235.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                  <Pane style="-fx-background-color: rgba(0, 0, 0, 0.7);" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane style="-fx-background-color: rgba(0, 0, 0, 0.7);" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <Pane style="-fx-background-color: rgba(0, 0, 0, 0.7);" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <BorderPane style="-fx-background-color: rgba(0, 0, 0, 0.7);" BorderPane.alignment="CENTER">
+                     <top>
+                        <Pane BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+               </center>
+               <top>
+                  <BorderPane BorderPane.alignment="CENTER">
+                     <center>
+                        <GridPane BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" />
+                              <ColumnConstraints hgrow="ALWAYS" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="ALWAYS" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" style="-fx-background-color: FF8906" text="REGISTER" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" />
+                              <Label alignment="CENTER" style="-fx-background-color: E53170;" text="LOGIN" textAlignment="CENTER" textFill="WHITE" />
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
+   </BorderPane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

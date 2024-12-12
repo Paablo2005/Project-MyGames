@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="480.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="480.0" prefWidth="854.0">
+         <top>
+            <Pane prefHeight="30.0" prefWidth="854.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefHeight="350.0" prefWidth="235.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <Pane prefHeight="30.0" prefWidth="854.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <Pane prefHeight="350.0" prefWidth="235.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <BorderPane prefHeight="409.0" prefWidth="384.0" BorderPane.alignment="CENTER">
+               <left>
+                  <Pane prefHeight="326.0" prefWidth="30.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane prefHeight="326.0" prefWidth="30.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <Pane prefHeight="30.0" prefWidth="384.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);" BorderPane.alignment="CENTER">
+                     <top>
+                        <Pane prefHeight="25.0" prefWidth="323.0" BorderPane.alignment="CENTER" />
+                     </top></BorderPane>
+               </center>
+               <top>
+                  <BorderPane prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <GridPane prefHeight="35.0" prefWidth="384.0" BorderPane.alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="197.0" style="-fx-background-color: FF8906" text="REGISTER" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" />
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="294.0" style="-fx-background-color: E53170;" text="LOGIN" textAlignment="CENTER" textFill="WHITE" />
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
