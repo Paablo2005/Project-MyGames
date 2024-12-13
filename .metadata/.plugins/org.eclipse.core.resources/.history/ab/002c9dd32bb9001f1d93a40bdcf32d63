@@ -1,0 +1,38 @@
+package controllers;
+
+import javafx.fxml.FXML;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.control.Label;
+
+public class LoginController {
+    @FXML
+    private GridPane paneBtnLogin;
+
+    @FXML
+    private GridPane paneBtnRegister;
+
+    @FXML
+    private BorderPane paneData;
+
+    @FXML
+    public void initialize() {
+        // Asignar eventos de clic
+        paneBtnLogin.setOnMouseClicked(event -> showLoginContent());
+        paneBtnRegister.setOnMouseClicked(event -> showRegisterContent());
+    }
+
+    private void showLoginContent() {
+        // Cambiar el contenido de dataPane al hacer clic en LOGIN
+        Label loginContent = new Label("This is the login screen");
+        loginContent.setStyle("-fx-text-fill: white; -fx-font-size: 16px;");
+        dataPane.setCenter(loginContent);
+    }
+
+    private void showRegisterContent() {
+        // Cambiar el contenido de dataPane al hacer clic en REGISTER
+        Label registerContent = new Label("This is the register screen");
+        registerContent.setStyle("-fx-text-fill: white; -fx-font-size: 16px;");
+        dataPane.setCenter(registerContent);
+    }
+}

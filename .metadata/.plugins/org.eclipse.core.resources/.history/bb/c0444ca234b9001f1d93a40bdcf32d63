@@ -1,0 +1,45 @@
+package controllers;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+
+import java.io.IOException;
+
+public class LoginController {
+    @FXML
+    private GridPane paneBtnLogin;
+
+    @FXML
+    private GridPane paneBtnRegister;
+
+    @FXML
+    private BorderPane paneData;
+
+    @FXML
+    public void initialize() {
+        // Asignar eventos de clic
+        paneBtnLogin.setOnMouseClicked(event -> showLoginContent());
+        paneBtnRegister.setOnMouseClicked(event -> showRegisterContent());
+    }
+
+    private void showLoginContent() {
+        try {
+            // Cargar el FXML del panel de login
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/src/main/java/views/LoginDataPane.fxml"));
+            Node loginPanel = loader.load();
+            // Establecer el contenido en paneData
+            paneData.setCenter(loginPanel);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showRegisterContent() {
+        // Ejemplo para otro contenido (puedes adaptarlo de forma similar)
+        paneData.setCenter(new Label("This is the register screen"));
+    }
+}
