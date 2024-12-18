@@ -12,17 +12,14 @@ public class User {
     @Column(name = "user_id")
     private Integer id;
 
-    @Column(name = "username", nullable = false, unique = true)
-    private String username;
-
-    @Column(name = "name", nullable = false)
-    private String name;
-
-    @Column(name = "surnames", nullable = false)
-    private String surnames;
-
     @Column(name = "mail", nullable = false, unique = true)
     private String mail;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "surnames")
+    private String surnames;
 
     @Column(name = "password", nullable = false)
     private String password;
@@ -57,14 +54,6 @@ public class User {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
 	}
 
 	public String getName() {

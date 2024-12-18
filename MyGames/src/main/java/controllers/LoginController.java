@@ -3,7 +3,6 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
@@ -21,6 +20,15 @@ public class LoginController {
 
     @FXML
     public void initialize() {
+        try {
+            // Cargar el FXML del panel de login
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/LoginDataPane.fxml"));
+            Node loginPanel = loader.load();
+            // Establecer el contenido en paneData
+            paneData.setCenter(loginPanel);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // Asignar eventos de clic
         paneBtnLogin.setOnMouseClicked(event -> showLoginContent());
         paneBtnRegister.setOnMouseClicked(event -> showRegisterContent());
@@ -39,7 +47,14 @@ public class LoginController {
     }
 
     private void showRegisterContent() {
-        // Ejemplo para otro contenido (puedes adaptarlo de forma similar)
-        paneData.setCenter(new Label("This is the register screen"));
+        try {
+            // Cargar el FXML del panel de login
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/RegisterDataPane.fxml"));
+            Node loginPanel = loader.load();
+            // Establecer el contenido en paneData
+            paneData.setCenter(loginPanel);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

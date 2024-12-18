@@ -3,6 +3,10 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="lbl"/>
+		<item value="login"/>
+		<item value="img"/>
+		<item value="profilePng"/>
 		<item value="forgot"/>
 		<item value="label"/>
 		<item value="flow"/>
